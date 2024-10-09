@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King of Diamonds Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="table">
+ <div class="player" id="player1">
+    <div class="player-label">You</div>
+    👤
+    <div class="player-selection">-</div>
+</div>
+<div class="player" id="player2">
+    <div class="player-label">AI 1</div>
+    👤
+    <div class="player-selection">-</div>
+</div>
+<div class="player" id="player3">
+    <div class="player-label">AI 2</div>
+    👤
+    <div class="player-selection">-</div>
+</div>
+<div class="player" id="player4">
+    <div class="player-label">AI 3</div>
+    👤
+    <div class="player-selection">-</div>
+</div>
+<div class="player" id="player5">
+    <div class="player-label">AI 4</div>
+    👤
+    <div class="player-selection">-</div>
+</div>
+
+        </div>
+
+        <div class="results">
+            <h1>King of Diamonds Game</h1>
+            <div class="player-inputs">
+                <h2>Your Number</h2>
+                <input type="number" id="playerNumber" min="0" max="100" placeholder="Enter a number">
+                <button id="submitButton">Submit Number</button>
+            </div>
+            <div id="resultsDisplay" class="hidden">
+                <h2>Selections</h2>
+                <div id="selections"></div>
+                <h3>Target Number: <span id="targetNumber"></span></h3>
+            </div>
+            <h2>Scores</h2>
+            <table id="scoresTable">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="scoresBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
